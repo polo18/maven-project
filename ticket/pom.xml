@@ -22,6 +22,16 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+ 
+  <!-- =============================================================== -->
+  <!-- DistributionManagement -->
+  <!-- =============================================================== -->
+  <distributionManagement>
+    <site>
+        <id>site-projet</id>
+        <url>scp://localhost/tmp/</url>
+    </site>
+  </distributionManagement>
   
   <!-- =============================================================== -->
   <!-- Build -->
@@ -65,7 +75,18 @@
             <artifactId>maven-assembly-plugin</artifactId>
             <version>3.0.0</version>
           </plugin>
-          
+
+          <!-- Generqtion de site de projet -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.6</version>
+            <configuration>
+                <!-- Je veux le site en français -->
+                <locales>fr</locales>
+            </configuration>
+          </plugin>
+        
         </plugins>
       </pluginManagement>
     
