@@ -49,8 +49,16 @@
 
             <item name="Architecture" href="architecture.html"/>
 
+            <!-- Entrée de menu vers la page FAQ -->
+
+            <item name="FAQ" href="faq.html"/>
+
         </menu>
         
+        <!-- Ajout d'un menu vers les différents rapport -->
+
+        <menu ref="reports" inherit="top"/>
+
     </body>
 
 </project>

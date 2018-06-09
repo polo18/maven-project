@@ -40,7 +40,27 @@
 <ul class="nav nav-list">
           <li class="nav-header">Projet parent</li>
     <li><a href="../index.html" title="ticket"><span class="none"></span>ticket</a>  </li>
-    </ul>
+            <li class="nav-header">Documentation sur le projet</li>
+    <li><a href="project-info.html" title="Info Projet"><span class="icon-chevron-down"></span>Info Projet</a>
+      <ul class="nav nav-list">
+    <li><a href="index.html" title="Bienvenue dans le projet"><span class="none"></span>Bienvenue dans le projet</a>  </li>
+    <li><a href="plugin-management.html" title="Gestion des plugins"><span class="none"></span>Gestion des plugins</a>  </li>
+    <li><a href="distribution-management.html" title="Gestion de la distribution"><span class="none"></span>Gestion de la distribution</a>  </li>
+    <li class="active"><a href="#"><span class="none"></span>Informations de dépendance</a>
+  </li>
+    <li><a href="source-repository.html" title="Dépôt de sources"><span class="none"></span>Dépôt de sources</a>  </li>
+    <li><a href="mail-lists.html" title="Listes de diffusion"><span class="none"></span>Listes de diffusion</a>  </li>
+    <li><a href="issue-tracking.html" title="Contrôle des livraisons"><span class="none"></span>Contrôle des livraisons</a>  </li>
+    <li><a href="integration.html" title="Intégration continue"><span class="none"></span>Intégration continue</a>  </li>
+    <li><a href="plugins.html" title="Plugins du projet"><span class="none"></span>Plugins du projet</a>  </li>
+    <li><a href="license.html" title="Licence du projet"><span class="none"></span>Licence du projet</a>  </li>
+    <li><a href="dependency-management.html" title="Gestion des dépendances"><span class="none"></span>Gestion des dépendances</a>  </li>
+    <li><a href="team-list.html" title="Membres de ce projet"><span class="none"></span>Membres de ce projet</a>  </li>
+    <li><a href="project-summary.html" title="Résumé du projet"><span class="none"></span>Résumé du projet</a>  </li>
+    <li><a href="dependencies.html" title="Dépendances"><span class="none"></span>Dépendances</a>  </li>
+      </ul>
+  </li>
+  </ul>
           <hr />
           <div id="poweredBy">
               <div class="clear"></div>
@@ -65,7 +85,7 @@
 <h3><a name="Apache_Buildr"></a>Apache Buildr</h3><a name="Apache_Buildr"></a>
 <div class="source"><pre class="prettyprint">'com.exemple:ticket-business:jar:1.0-SNAPSHOT'</pre></div></div>
 <div class="section">
-<h3><a name="Apache_Ivy"></a>Apache Ivy</h3><a name="Apache_Ivy"></a>
+<h3><a name="Apache_Ant"></a>Apache Ant</h3><a name="Apache_Ant"></a>
 <div class="source"><pre class="prettyprint">&lt;dependency org=&quot;com.exemple&quot; name=&quot;ticket-business&quot; rev=&quot;1.0-SNAPSHOT&quot;&gt;
   &lt;artifact name=&quot;ticket-business&quot; type=&quot;jar&quot; /&gt;
 &lt;/dependency&gt;</pre></div></div>
@@ -75,14 +95,14 @@
 @Grab(group='com.exemple', module='ticket-business', version='1.0-SNAPSHOT')
 )</pre></div></div>
 <div class="section">
-<h3><a name="GradleGrails"></a>Gradle/Grails</h3><a name="GradleGrails"></a>
+<h3><a name="Grails"></a>Grails</h3><a name="Grails"></a>
 <div class="source"><pre class="prettyprint">compile 'com.exemple:ticket-business:1.0-SNAPSHOT'</pre></div></div>
 <div class="section">
-<h3><a name="Scala_SBT"></a>Scala SBT</h3><a name="Scala_SBT"></a>
-<div class="source"><pre class="prettyprint">libraryDependencies += &quot;com.exemple&quot; % &quot;ticket-business&quot; % &quot;1.0-SNAPSHOT&quot;</pre></div></div>
-<div class="section">
 <h3><a name="Leiningen"></a>Leiningen</h3><a name="Leiningen"></a>
-<div class="source"><pre class="prettyprint">[com.exemple/ticket-business &quot;1.0-SNAPSHOT&quot;]</pre></div></div></div>
+<div class="source"><pre class="prettyprint">[com.exemple/ticket-business &quot;1.0-SNAPSHOT&quot;]</pre></div></div>
+<div class="section">
+<h3><a name="SBT"></a>SBT</h3><a name="SBT"></a>
+<div class="source"><pre class="prettyprint">libraryDependencies += &quot;com.exemple&quot; %% &quot;ticket-business&quot; % &quot;1.0-SNAPSHOT&quot;</pre></div></div></div>
         </div>
       </div>
     </div>
