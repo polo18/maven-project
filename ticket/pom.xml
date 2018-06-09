@@ -121,10 +121,30 @@
                     <linkXRef>false</linkXRef>
                 </configuration>
                 <reportSets>
+                    <!-- reportSet d'agrégation des rapports des sous-projets (modules) -->
                     <reportSet>
+                        <id>aggregate</id>
                         <reports>
-                            <report>report-only</report>
+                            <report>report</report>
                         </reports>
+                        <!-- ne pas exécuter ce sous-rapport dans les sous-projets -->
+                        <inherited>false</inherited>
+                        <configuration>
+                            <aggregate>true</aggregate>
+                        </configuration>
+                    </reportSet>
+
+                    <!-- reportSet non agrégé, exécuté dans tous les sous-projets (modules) -->
+                    <reportSet>
+                        <id>modules</id>
+                        <!-- exécuter ce sous-rapport dans les sous-projets -->
+                        <inherited>true</inherited>
+                        <reports>
+                            <report>report</report>
+                        </reports>
+                        <configuration>
+                            <aggregate>false</aggregate>
+                        </configuration>
                     </reportSet>
                 </reportSets>
             </plugin>
